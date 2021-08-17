@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "allowImportExportEveryWhere": true
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "prettier/prettier": ["error", { "semi": true }],
+    "no-console": "off",
+    "import/extensions": "off",
+    "import/no-named-as-default": 0,
+    "no-restricted-globals": "off",
+    "eqeqeq": "off",
+    "no-underscore-dangle": "off"
+  },
+  "plugins": ["prettier"]
+}

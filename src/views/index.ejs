@@ -1,0 +1,45 @@
+<%- include ('./includes/head.ejs') %> 
+<%- include ('./includes/navHome.ejs') %>
+
+<div class="container">
+  <hr />
+  <div class="jumbotron">
+    <h1 class="display-5">Bem-Vindo</h1>
+    <p class="lead">
+      Esse é um blog realizado para realizar o famoso CRUD com NodeJS.
+    </p>
+    <hr class="my-4" />
+    <p>
+      Quer saber mais sobre? leia o ReadMe sobre o projeto
+      <a
+        href="https://github.com/Joabesv/nodeBlog/blob/master/README.md"
+        class="btn btn-success"
+        >aqui</a
+      >
+    </p>
+  </div>
+  <hr />
+  <% articles.forEach(article => { %>
+  <div class="card">
+    <div class="card-header">
+      <h2><%= article.title %></h2>
+    </div>
+    <div class="card-body">
+      <a class="btn btn-success" href="/<%= article.slug %> ">Ler artigo</a>
+    </div>
+  </div>
+  <br />
+  <% }) %>
+
+  <div class="row">
+    <div class="col col-12">
+      <a style="float:right;" href="/articles/page/2">
+        Next
+        <hr />
+      </a>
+    </div>
+    <hr />
+  </div>
+</div>
+
+<%- include ('./includes/footer.ejs') %>

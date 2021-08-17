@@ -1,0 +1,38 @@
+{
+  "name": "nodeblog",
+  "version": "1.0.0",
+  "description": "A blog with admin panel and text editor",
+  "main": "src/index.js",
+  "author": "Joabesv <joabevarjao123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "lint": "eslint \"src/**/*.js\""
+  },
+  "type": "module",
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1",
+    "node": "15.4.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "slugify": "^1.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  }
+}
