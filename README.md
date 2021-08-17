@@ -13,10 +13,10 @@ Frontend
 ```bash
 
 # Clone este repositório
-$ git clone https://github.com/Joabesv/crud-node.git
+$ git clone https://github.com/Joabesv/nodeBlog.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd crud-node
+$ cd nodeBlog
 
 # Instale as dependências
 $ yarn
